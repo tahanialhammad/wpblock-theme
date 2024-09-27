@@ -1,0 +1,68 @@
+{
+    "version": 2,
+    "templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "sidebar",
+			"title": "Sidebar"
+		},
+		{
+			"area": "uncategorized",
+			"name": "post-meta",
+			"title": "Post Meta"
+		}
+	],
+    "customTemplates": [
+		{
+            "name": "page-without-sidebar",
+			"postTypes": ["page"],
+			"title": "Page without Sidebar"
+		}
+	],
+    "settings": {
+		"layout": {
+			"contentSize": "900px",
+			"wideSize": "1280px"
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true,
+			"blockGap": true
+		},
+        "color": {
+            "defaultPalette": false,
+            "palette": [
+				{
+					"color": "#000",
+					"name": "Primary",
+					"slug": "primary"
+				},
+                {
+					"color": "red",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+                {
+					"color": "#111111",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+                {
+					"color": "#cfcabe",
+					"name": "Accent",
+					"slug": "accent"
+				}
+            ]
+        }
+    }
+}
