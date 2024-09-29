@@ -30,6 +30,7 @@
 		}
 	],
     "settings": {
+		"appearanceTools": true,
 		"layout": {
 			"contentSize": "900px",
 			"wideSize": "1280px"
@@ -40,6 +41,7 @@
 			"blockGap": true
 		},
         "color": {
+			"link": true,
             "defaultPalette": false,
             "palette": [
 				{
@@ -203,6 +205,13 @@
 		}
     },
 	"styles":{
+		"blocks": {
+			"core/cover": {
+				"color" :{
+					"text" : "white"
+				}
+			}
+		},
 		"elements": {
 			"button": {
 				":active": {
