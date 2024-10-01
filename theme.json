@@ -210,6 +210,20 @@
 				"color" :{
 					"text" : "white"
 				}
+			},
+			"core/site-title": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
 			}
 		},
 		"elements": {
