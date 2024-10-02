@@ -224,6 +224,37 @@
 						}
 					}
 				}
+			},
+			"core/post-title": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"core/navigation-link": {
+				"css": "& .wp-block-navigation-item__content{padding-bottom: 2px; transition: all 0.5s ease-in;}& .wp-block-navigation-item__content:hover{border-bottom: 2px solid  var(--wp--preset--color--contrast);} &.current-menu-item > .wp-block-navigation-item__content{border-bottom:2px solid  var(--wp--preset--color--contrast);}"
+			  },
+			"core/navigation": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
 			}
 		},
 		"elements": {
