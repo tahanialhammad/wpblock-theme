@@ -46,42 +46,42 @@
             "defaultPalette": false,
             "palette": [
 				{
-					"color": "#f9f9f9",
+					"color": "black",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "#ffffff",
+					"color": "black",
 					"name": "Base / Two",
 					"slug": "base-2"
 				},
 				{
-					"color": "#111111",
+					"color": "#FF6500",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#636363",
+					"color": "#FF6500",
 					"name": "Contrast / Two",
 					"slug": "contrast-2"
 				},
 				{ 
-					"color": "#A4A4A4",
+					"color": "#FF6500",
 					"name": "Contrast / Three",
 					"slug": "contrast-3"
 				},
 				{
-					"color": "#cfcabe",
+					"color": "#0B192C",
 					"name": "Accent",
 					"slug": "accent"
 				},
 				{
-					"color": "#c2a990",
+					"color": "#0B192C",
 					"name": "Accent / Two",
 					"slug": "accent-2"
 				},
 				{
-					"color": "#d8613c",
+					"color": "#0B192C",
 					"name": "Accent / Three",
 					"slug": "accent-3"
 				},

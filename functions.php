@@ -4,11 +4,12 @@
  * Register block styles.
  */
 
- if ( ! function_exists( 'wpblockstheme_block_styles' ) ) :
+if (! function_exists('wpblockstheme_block_styles')) :
 	/**
 	 * Register custom block styles
 	 */
-	function wpblockstheme_block_styles() {
+	function wpblockstheme_block_styles()
+	{
 
 		register_block_style(
 			'core/button',
@@ -30,12 +31,68 @@
 			',
 			)
 		);
-	
+		register_block_style('core/image', [
+			'name' => 'image-mirrored',
+			'label' => 'Image Mirrored',
+			'inline_style' => '
+					 .wp-block-image.is-style-image-mirrored > img{
+					transform: scaleX(-1)
+					}
+				',
+		]);
+
+		register_block_style('core/image', [
+			'name' => 'scale-image',
+			'label' => 'Scale Image',
+			'inline_style' => '
+					 .wp-block-image.is-style-scale-image{
+				   transition: all 1s ease-in;
+					}
+					 .wp-block-image.is-style-scale-image:hover{
+				   transform: scale(1.05)
+					}
+				',
+		]);
+		register_block_style('core/heading', [
+			'name' => 'custom-heading',
+			'label' => 'Custom heading',
+			'inline_style' => '
+				 .wp-block-heading.is-style-custom-heading::before {
+				  content: "";
+				  background: var(--wp--preset--color--accent-3) !important;
+				  width: 95px;
+				  height: 1px;
+				  display: inline-block;
+					}
+				',
+		]);
+
+		register_block_style('core/column', [
+			'name' => 'custom-column-moved',
+			'label' => 'Column to right',
+			'inline_style' => '
+					 .wp-block-column.is-style-custom-column-moved{
+					   margin-inline-start: -60px;
+					   margin-inline-end: 60px;
+					   z-index: 99;
+					}
+			  @media screen and (max-width:787px){
+					 .wp-block-column.is-style-custom-column-moved{
+					   margin-inline-start: auto;
+					   margin-inline-end: auto;
+					   margin-block-start: -20px;
+					   z-index: 99;
+					}
+		
+			  }
+				',
+		]);
+
 		register_block_style(
 			'core/navigation-link',
 			array(
 				'name'         => 'arrow-link',
-				'label'        => __( 'With arrow', 'twentytwentyfour' ),
+				'label'        => __('With arrow', 'twentytwentyfour'),
 				/*
 				 * Styles for the custom arrow nav link block style
 				 */
@@ -53,7 +110,7 @@
 			'core/heading',
 			array(
 				'name'         => 'asterisk',
-				'label'        => __( 'With asterisk', 'twentytwentyfour' ),
+				'label'        => __('With asterisk', 'twentytwentyfour'),
 				'inline_style' => "
 				.is-style-asterisk:before {
 					content: '';
@@ -89,4 +146,4 @@
 	}
 endif;
 
-add_action( 'init', 'wpblockstheme_block_styles' );
+add_action('init', 'wpblockstheme_block_styles');
