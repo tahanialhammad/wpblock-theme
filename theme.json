@@ -1,47 +1,9 @@
 {
     "version": 2,
-    "templateParts": [
-		{
-			"area": "header",
-			"name": "header",
-			"title": "Header"
-		},
-		{
-			"area": "footer",
-			"name": "footer",
-			"title": "Footer"
-		},
-		{
-			"area": "uncategorized",
-			"name": "sidebar",
-			"title": "Sidebar"
-		},
-		{
-			"area": "uncategorized",
-			"name": "post-meta",
-			"title": "Post Meta"
-		}
-	],
-    "customTemplates": [
-		{
-            "name": "page-without-sidebar",
-			"postTypes": ["page"],
-			"title": "Page without Sidebar"
-		}
-	],
-    "settings": {
+	"settings": {
 		"appearanceTools": true,
 		"useRootPaddingAwareAlignments": true,
-		"layout": {
-			"contentSize": "900px",
-			"wideSize": "1280px"
-		},
-		"spacing": {
-			"padding": true,
-			"margin": true,
-			"blockGap": true
-		},
-        "color": {
+		"color": {
 			"link": true,
             "defaultPalette": false,
             "palette": [
@@ -97,6 +59,15 @@
 				}
             ]
         },
+		"layout": {
+			"contentSize": "900px",
+			"wideSize": "1280px"
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true,
+			"blockGap": true
+		},
 		"typography": {
 			"lineHeight": true,
 			"fontSizes": [
@@ -332,5 +303,34 @@
 				}
 			}
 		}
-	}
+	},
+    "templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "sidebar",
+			"title": "Sidebar"
+		},
+		{
+			"area": "uncategorized",
+			"name": "post-meta",
+			"title": "Post Meta"
+		}
+	],
+    "customTemplates": [
+		{
+            "name": "page-without-sidebar",
+			"postTypes": ["page"],
+			"title": "Page without Sidebar"
+		}
+	]
 }
