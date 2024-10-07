@@ -17,15 +17,38 @@ if (! function_exists('wpblockstheme_block_styles')) :
 				'name'         => 'primary-button',
 				'label'        => 'Primary button',
 				/*
-				 * Styles for the custom Arrow icon style of the Details block
+				 * Styles for the custom Primary button
 				 */
 				'inline_style' => '
-            	.wp-block-button.is-style-primary-button > .wp-block-button__link:{
-                transition: all 0.5s ease-in;
+            	.wp-block-button.is-style-primary-button > .wp-block-button__link{
+					background:  var(--wp--preset--color--accent) !important;
+               		transition: all 0.5s ease-in;
             }
 				.wp-block-button.is-style-primary-button > .wp-block-button__link:hover{
-                	background: transparant !important;
-                    color: var(--wp--preset--color--accent-3) !important;
+					background:  var(--wp--preset--color--accent-2) !important;
+                    color: var(--wp--preset--color--base) !important;
+                    border: 2px sold  var(--wp--preset--color--accent-3) !important;
+            }
+			',
+			)
+		);
+		
+		register_block_style(
+			'core/button',
+			array(
+				'name'         => 'secondary-button',
+				'label'        => 'Secondary button',
+				/*
+				 * Styles for the custom Secondary button
+				 */
+				'inline_style' => '
+            	.wp-block-button.is-style-secondary-button > .wp-block-button__link{
+					background:  var(--wp--preset--color--accent-2) !important;
+               		transition: all 0.5s ease-in;
+            }
+				.wp-block-button.is-style-secondary-button > .wp-block-button__link:hover{
+					background:  var(--wp--preset--color--accent) !important;
+                    color: var(--wp--preset--color--base) !important;
                     border: 2px sold  var(--wp--preset--color--accent-3) !important;
             }
 			',
@@ -53,6 +76,20 @@ if (! function_exists('wpblockstheme_block_styles')) :
 					}
 				',
 		]);
+
+		register_block_style('core/image', [
+			'name' => 'circular-image',
+			'label' => 'Circular image',
+			'inline_style' => '
+				.wp-block-image.is-style-circular-image{
+				    width: 200px; 
+ 					height: 200px; 
+					border-radius: 50%;
+					object-fit: cover;			
+					}
+				',
+		]);
+		
 		register_block_style('core/heading', [
 			'name' => 'custom-heading',
 			'label' => 'Custom heading',
